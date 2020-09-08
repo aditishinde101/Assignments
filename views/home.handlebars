@@ -1,0 +1,6 @@
+<p><b><span style="color: orange;"><u>{{name}} , {{#with sys}} {{country}} {{/with}}</u></span> <i> {{#each weather}} {{main}} {{/each}} </i></b><br>
+{{#with main}} <span style="background: black;color:white;">
+{{temp}}</span> temperature from {{temp_min}} to {{temp_max}}, {{/with}} wind {{#with wind}} {{speed}} {{/with}} m/s. cloud {{#with clouds}}{{all}}{{/with}}
+<br>
+Geo coords <span style="color: orange;"><u>[{{#with coord}}{{lon}}, {{lat}}{{/with}}]</u></span>
+</p>
